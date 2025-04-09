@@ -1,29 +1,23 @@
-import { PrismaClient } from "@prisma/client";
-import { notFound } from 'next/navigation'
+// lib/getblogs.ts
+import { prisma } from "./prisma";
 
-const prisma = new PrismaClient();
+export async function getAllBlogs() {
+  try {
+    const blogs = await prisma.blog.findMany({
+      orderBy: {
+        createdAt: "desc",
+      },
+      select: {
+        id: true,
+        title: true,
+        content: true,
+        createdAt: true,
+      },
+    });
 
-export async function getBlog(blogId: string) {
-    try {
-        const blog = await prisma.blog.findUnique({
-            where: { id: blogId },
-            select: {
-                id: true,
-                title: true,
-                content: true,
-                author: true,
-                createdAt: true,
-                image_public_id: true
-            }
-        })
-
-        if (!blog) {
-            notFound()
-        }
-
-        return blog
-    } catch (error) {
-        console.error('Error fetching blog:', error)
-        throw new Error('Failed to fetch blog')
-    }
+    return blogs;
+  } catch (error) {
+    console.error("Error fetching blogs:", error);
+    return []; // fallback to prevent Vercel build fail
+  }
 }
