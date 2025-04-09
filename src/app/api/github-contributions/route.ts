@@ -41,8 +41,12 @@ export async function GET() {
   }
 
   const flat = json.data.user.contributionsCollection.contributionCalendar.weeks
-    .flatMap((week: any) => week.contributionDays)
-    .map((day: any) => ({
+    .flatMap(
+      (week: {
+        contributionDays: { date: string; contributionCount: number }[];
+      }) => week.contributionDays
+    )
+    .map((day: { date: string; contributionCount: number }) => ({
       date: day.date,
       count: day.contributionCount,
     }));
