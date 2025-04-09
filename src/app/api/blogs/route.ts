@@ -1,37 +1,30 @@
-import { prisma } from '@/lib/prisma'
+// app/api/blogs/route.ts
+import { prisma } from "@/lib/prisma";
 import { NextResponse } from "next/server";
 
-
 export async function GET() {
-    try {
-        const blogs = await prisma.blog.findMany({
-            orderBy: {
-                createdAt: 'desc'
-            },
-            select: {
-                id: true,
-                title: true,
-                content: true,
-                createdAt: true
-            }
-        });
+  try {
+    const blogs = await prisma.blog.findMany({
+      orderBy: {
+        createdAt: "desc",
+      },
+      select: {
+        id: true,
+        title: true,
+        content: true,
+        createdAt: true,
+      },
+    });
 
-        return NextResponse.json(
-            { success: true, message: blogs },
-            {
-                status: 200,
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Cache-Control': 'no-store',
-                }
-            }
-        );
-
-    } catch (error) {
-        console.error('Database error:', error);
-        return NextResponse.json(
-            { success: false, message: 'Error while fetching blogs' },
-            { status: 500 }
-        )
-    }
+    return NextResponse.json(
+      { success: true, message: blogs },
+      { status: 200 }
+    );
+  } catch (error) {
+    console.error("Database error:", error);
+    return NextResponse.json(
+      { success: false, message: "Error while fetching blogs" },
+      { status: 500 }
+    );
+  }
 }
