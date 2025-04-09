@@ -75,7 +75,7 @@ export default function Home() {
         <Title title="GitHub Contributions" />
         <Link href={"https://github.com/chetanchaudhari789"} target="_blank">
           <GithubGraph
-            username="Chetan Chaudhari"
+            username="chetanchaudhari789"
             blockMargin={2}
             colorPallete={[
               "#1e1e2f",

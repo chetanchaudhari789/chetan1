@@ -3,6 +3,7 @@ import { useCallback, useEffect, useState } from "react";
 import { Activity, ActivityCalendar } from "react-activity-calendar";
 
 type GithubGraphProps = {
+  username: string;
   blockMargin?: number;
   colorPallete?: string[];
 };
