@@ -121,7 +121,7 @@ const data: Project[] = [
       "Magic UI",
       "Tailwind CSS",
     ],
-    link: "https://chetan.tech/",
+    link: "https://chetan-black.vercel.app/",
     source: "https://github.com/chetanchaudhari789/",
   },
 ];

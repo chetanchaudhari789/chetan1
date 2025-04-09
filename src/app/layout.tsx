@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     title: "Chetan",
     description:
       "Explore the portfolio of Chetan Chaudhari, showcasing innovative web applications and development skills.",
-    url: "https://Chetan.tech",
+    url: "https://chetan-black.vercel.app/",
     siteName: "Chetan",
     images: [
       {
