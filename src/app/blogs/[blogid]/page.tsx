@@ -3,6 +3,7 @@ import { getAllBlogs } from "../../../lib/getBlog";
 
 export const dynamic = "force-dynamic"; // This ensures it's always run server-side
 
+// eslint-disable-next-line @next/next/no-async-client-component
 export default async function BlogsPage() {
   const blogs = await getAllBlogs();
 
