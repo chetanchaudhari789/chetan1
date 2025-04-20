@@ -97,7 +97,7 @@ const Navbar = () => {
                 <FileIcon className="w-[19px] h-[19px] max-sm:h-[15px] max-sm:w-[15px] text-black dark:text-white" />
               </div>
             </Tooltip>
-          </Link>
+          </Link>
    
           <Link href="https://github.com/chetanchaudhari789" target="_blank">
             <Tooltip content="Github">
