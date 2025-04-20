@@ -88,7 +88,7 @@ const Navbar = () => {
           />
 
           <Link
-  href="https://drive.google.com/file/d/1U9ywAHkVTBzHLRXFuQIGzGWkTTo5htsh/view?usp=sharing"
+  href="https://drive.google.com/uc?id=1U9ywAHkVTBzHLRXFuQIGzGWkTTo5htsh"
   target="_blank"
   rel="noopener noreferrer"
   underline="none"
@@ -99,6 +99,7 @@ const Navbar = () => {
     </div>
   </Tooltip>
 </Link>
+
 
 
           <Link href="https://github.com/chetanchaudhari789" target="_blank">
