@@ -88,7 +88,7 @@ const Navbar = () => {
           />
 
           <Link
-  href="https://drive.google.com/uc?id=1U9ywAHkVTBzHLRXFuQIGzGWkTTo5htsh"
+  href="https://drive.google.com/uc?export=download&id=1U9ywAHkVTBzHLRXFuQIGzGWkTTo5htsh"
   target="_blank"
   rel="noopener noreferrer"
   underline="none"
@@ -99,6 +99,7 @@ const Navbar = () => {
     </div>
   </Tooltip>
 </Link>
+
 
 
 
