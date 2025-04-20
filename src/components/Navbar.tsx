@@ -88,7 +88,7 @@ const Navbar = () => {
           />
 
           <Link
-  href="https://drive.google.com/file/d/1U9ywAHkVTBzHLRXFuQIGzGWkTTo5htsh/view?usp=sharing"
+  href="https://chetanchaudhari789.github.io/My__Resume/resume.pdf"
   target="_blank"
   rel="noopener noreferrer"
   underline="none"
