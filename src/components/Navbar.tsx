@@ -88,16 +88,18 @@ const Navbar = () => {
           />
 
           <Link
-            href="https://drive.google.com/file/d/1U9ywAHkVTBzHLRXFuQIGzGWkTTo5htsh/view?usp=sharing"
-            target="_blank"
-            underline="none"
-          >
-            <Tooltip content="Resume">
-              <div className="hover:px-3 max-sm:hover:px-2 py-2.5 dark:hover:bg-[#262626] hover:bg-[#F4F4F5] rounded-full transition-all duration-300">
-                <FileIcon className="w-[19px] h-[19px] max-sm:h-[15px] max-sm:w-[15px] text-black dark:text-white" />
-              </div>
-            </Tooltip>
-          </Link>
+  href="https://drive.google.com/file/d/1U9ywAHkVTBzHLRXFuQIGzGWkTTo5htsh/view?usp=sharing"
+  target="_blank"
+  rel="noopener noreferrer"
+  underline="none"
+>
+  <Tooltip content="Resume">
+    <div className="hover:px-3 max-sm:hover:px-2 py-2.5 dark:hover:bg-[#262626] hover:bg-[#F4F4F5] rounded-full transition-all duration-300">
+      <FileIcon className="w-[19px] h-[19px] max-sm:h-[15px] max-sm:w-[15px] text-black dark:text-white" />
+    </div>
+  </Tooltip>
+</Link>
+
 
           <Link href="https://github.com/chetanchaudhari789" target="_blank">
             <Tooltip content="Github">
