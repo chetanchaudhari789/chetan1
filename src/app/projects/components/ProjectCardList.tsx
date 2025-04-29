@@ -31,6 +31,15 @@ const ProjectCardList = () => {
 export default ProjectCardList;
 
 const data: Project[] = [
+   {
+    logo: "/favicon.ico",
+    title: "SketchFlow",
+    description:
+      "SketchFlow is a collaborative drawing tool built with React and Vite, Express, and Socket.IO, designed for creating diagrams, sketches, and illustrations in real-time.",
+    techStack: ["Node.js","Socket.IO", "TypeScript", "Vite", "Tailwind CSS"],
+    link: "https://sketch-flow-flame.vercel.app/",
+    source: "https://github.com/chetanchaudhari789/SketchFlow",
+  },
   {
     logo: "/codify.png",
     title: "Codify",
